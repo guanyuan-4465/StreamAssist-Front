@@ -1,0 +1,29 @@
+# 首先忽略所有文件和目录
+*
+*/
+
+# 然后明确包含你想要的文件和目录
+!autoreply/
+!src/
+!build_script.py
+!main.js
+!package.json
+!package-lock.json
+!requirements.txt
+!.gitignore
+
+# 排除 autoreply/node_modules 目录
+autoreply/node_modules/
+
+# 排除 autoreply 中的其他不需要的文件和目录
+autoreply/dist/
+autoreply/.DS_Store
+autoreply/Thumbs.db
+
+# 排除 src 中的不需要的文件和目录
+src/__pycache__/
+src/*.pyc
+src/*.pyo
+src/*.pyd
+src/.DS_Store
+src/Thumbs.db

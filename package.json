@@ -1,0 +1,28 @@
+{
+  "name": "streamassist-desktop",
+  "version": "1.0.0",
+  "description": "StreamAssist Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "cross-env NODE_ENV=development electron .",
+    "build": "cross-env ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ ELECTRON_BUILDER_BINARIES_MIRROR=https://npmmirror.com/mirrors/electron-builder-binaries/ electron-builder build --win --x64 --config.win.signAndEditExecutable=false --config.forceCodeSigning=false",
+    "build:dir": "cross-env ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/ ELECTRON_BUILDER_BINARIES_MIRROR=https://npmmirror.com/mirrors/electron-builder-binaries/ electron-builder build --dir --config.win.signAndEditExecutable=false --config.forceCodeSigning=false",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "author": "Sirenology",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^22.0.0",
+    "electron-builder": "^24.6.3",
+    "sass": "^1.85.1",
+    "sass-loader": "^16.0.5"
+  },
+  "dependencies": {
+    "finalhandler": "^1.2.0",
+    "iconv-lite": "^0.6.3",
+    "node-fetch": "^2.6.9",
+    "serve-static": "^1.15.0"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "autoreply",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@vue/cli": "^5.0.8",
+    "axios": "^1.7.9",
+    "core-js": "^3.8.3",
+    "dayjs": "^1.11.13",
+    "element-plus": "^2.9.3",
+    "socket.io-client": "^4.8.1",
+    "vue": "^3.2.13",
+    "vue-cli": "^2.9.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/eslint-parser": "^7.21.8",
+    "@babel/preset-env": "^7.22.0",
+    "@vue/cli-plugin-babel": "^5.0.0",
+    "@vue/cli-plugin-eslint": "^5.0.0",
+    "@vue/cli-service": "^5.0.8",
+    "eslint": "^8.42.0",
+    "eslint-plugin-vue": "^9.14.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
